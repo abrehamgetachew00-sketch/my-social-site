@@ -1,56 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Top TikTokers Voting</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/Adonay-profile.jpg" alt="Adonay" class="profile-img">
+  <h3>1. Adonay</h3>
+  <p>Ethiopian content creator with 5M+ followers</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
 
-  <h1>🔥 Top TikTokers Voting</h1>
-  <p>You have 1 FREE vote. Extra votes require payment (demo only).</p>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Jon_Daniel.jpg" alt="Jon Daniel" class="profile-img">
+  <h3>2. Jon Daniel</h3>
+  <p>Ethiopian content creator</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
 
-  <div class="card-container">
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Khaby_Lame.jpg" alt="Khaby Lame" class="profile-img">
+  <h3>3. Khaby Lame</h3>
+  <p>One of the most famous TikTok creators</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
 
-    <div class="card">
-      <h3>👤 TikToker 1</h3>
-      <p>Funny videos & trends</p>
-      <button onclick="vote(this)">Vote</button>
-      <p class="votes">0 votes</p>
-    </div>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo" class="profile-img">
+  <h3>4. Cristiano Ronaldo</h3>
+  <p>Famous football player (added for voting)</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
 
-    <div class="card">
-      <h3>👤 TikToker 2</h3>
-      <p>Dance & entertainment</p>
-      <button onclick="vote(this)">Vote</button>
-      <p class="votes">0 votes</p>
-    </div>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Billie_Eilish_2020.jpg" alt="Billie Eilish" class="profile-img">
+  <h3>5. Billie Eilish</h3>
+  <p>Famous singer</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
 
-    <div class="card">
-      <h3>👤 TikToker 3</h3>
-      <p>Comedy & lifestyle</p>
-      <button onclick="vote(this)">Vote</button>
-      <p class="votes">0 votes</p>
-    </div>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/The_Weeknd_2018.jpg" alt="The Weeknd" class="profile-img">
+  <h3>6. The Weeknd</h3>
+  <p>Canadian famous singer</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
 
-  </div>
-
-  <script>
-    let usedFreeVote = false;
-
-    function vote(button) {
-      let votesText = button.nextElementSibling;
-      let count = parseInt(votesText.innerText);
-
-      if (!usedFreeVote) {
-        count++;
-        votesText.innerText = count + " votes";
-        usedFreeVote = true;
-        alert("✅ You used your FREE vote!");
-      } else {
-        alert("❌ You already used your free vote.\nBuy more votes (not implemented yet).");
-      }
-    }
-  </script>
-
-</body>
-</html>
+<div class="card">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Placeholder.jpg" alt="Add Creator" class="profile-img">
+  <h3>7. (Add Name Here)</h3>
+  <p>You can add another creator</p>
+  <button onclick="vote(this)">Vote</button>
+  <p class="votes">0 votes</p>
+</div>
