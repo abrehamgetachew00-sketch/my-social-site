@@ -10,14 +10,46 @@
 
   <div class="card-container">
     <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Flag_of_Ethiopia.svg" alt="Ethiopia">
       <h3>🇪🇹 Ethiopia</h3>
       <p>Beautiful landscapes and culture.</p>
+      <button onclick="likeCard(this)">❤️ Like</button>
+      <p class="likes">0 likes</p>
     </div>
+
     <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg" alt="Kenya">
       <h3>🇰🇪 Kenya</h3>
       <p>Home of wildlife safaris.</p>
+      <button onclick="likeCard(this)">❤️ Like</button>
+      <p class="likes">0 likes</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg" alt="South Africa">
+      <h3>🇿🇦 South Africa</h3>
+      <p>Stunning coastlines and wildlife.</p>
+      <button onclick="likeCard(this)">❤️ Like</button>
+      <p class="likes">0 likes</p>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg" alt="Nigeria">
+      <h3>🇳🇬 Nigeria</h3>
+      <p>Vibrant culture and cities.</p>
+      <button onclick="likeCard(this)">❤️ Like</button>
+      <p class="likes">0 likes</p>
     </div>
   </div>
+
+  <script>
+    function likeCard(button) {
+      let likesText = button.nextElementSibling;
+      let count = parseInt(likesText.innerText);
+      count++;
+      likesText.innerText = count + " likes";
+    }
+  </script>
 
 </body>
 </html>
